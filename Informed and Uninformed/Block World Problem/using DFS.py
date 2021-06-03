@@ -9,7 +9,7 @@ class Node:
         self.config = Config
         self.parent = Parent
 
-    def generate(self):  # todo : generate a list containing the next set of moves
+    def generate(self):  # returns a list containing the next set of moves from current state
         generated = []
         temp = copy.deepcopy(self.config)
         for x in temp:
